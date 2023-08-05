@@ -1,0 +1,50 @@
+.principal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 20px;
+}
+.contenedor{
+    min-width: 500px;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.contenedor a{
+    margin-top: 10px;
+    width: 70%;
+}
+.contenedor a button{
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid #000;
+    transition:.2s;
+    font-weight: bold;
+}
+.contenedor a button:hover{
+    background-color: #000;
+    color: white;
+    transition: .1s ease-in-out;
+    scale: 1.1;
+}
+.formulario{
+    width: 100%;
+}
+@media screen and (max-width: 800px){
+    .contenedor{
+        min-width: 200px;
+    }
+    .contenedor a{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px){
+    .principal{
+        flex-direction: column;
+    }
+}
